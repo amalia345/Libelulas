@@ -45,7 +45,7 @@ body {
 
 body.dark-theme {
     --light-color: #171515;
-    --dark-color: #dacfcf;
+    --dark-color: #e2e2e2;
     --border-top-color: rgba(255, 255, 255, 0.1);
     --third-color: rgb(243, 80, 15);
     
@@ -183,6 +183,7 @@ menu>.list {
 
 .list-link {
     font-size: 1.4rem;
+    color: var(--light-color);
 
 }
 
@@ -276,8 +277,12 @@ menu>.list {
     background: url('../images/sparkle_alt.png') center no-repeat;
     background-size: cover;
 }
-
+.dark-theme .has-sparkles-alt::after{
+    background: url('../images/sparkle_alt_light.png') center no-repeat;
+    background-size: cover;
+}
 /* !ABOUT ME STYLES */
+
 
 /* !PORTFOLIO STYLES */
 
