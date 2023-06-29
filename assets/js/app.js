@@ -37,3 +37,22 @@ const toggleTheme = () =>{
 }
 themeToggleButton.addEventListener('click',toggleTheme)
 // !SCROLL REVEAL
+const sr = ScrollReveal({
+    distance: '50px',
+    duration: 1500,
+    easing: 'cubic-bezier(.68,-.55,.265,1.55)'
+})
+
+sr.reveal('.main-title', {origin:'top'});
+sr.reveal('.scroll-reveal-left', {origin:'left'});
+sr.reveal('.scroll-reveal-right', {origin:'right'});
+sr.reveal('.tech-stack-item', {interval:250});
+sr.reveal(`.section-title, .section-subtitle-container `, {
+    interval:350,
+    origin: 'top'
+});
+sr.reveal('.portafolio-card', {interval:550});
+sr.reveal(`.form-container, .footer `, {
+    interval:350,
+    origin: 'top'
+});
