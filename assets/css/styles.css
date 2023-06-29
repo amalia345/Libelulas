@@ -13,7 +13,7 @@
 /*Variables */
 
 :root {
-    --light-color: #e7d9e4;
+    --light-color: #f3f3f3;
     --dark-color: #242323;
     --third-color: rgb(143, 214, 113);
 
@@ -36,7 +36,7 @@ html {
 
 body {
     font-family: var(--body-font-family);
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     line-height: 1.5;
     background-color: var(--light-color);
     color: var(--dark-color);
@@ -48,7 +48,7 @@ body.dark-theme {
     --dark-color: #e2e2e2;
     --border-top-color: rgba(255, 255, 255, 0.1);
     --third-color: rgb(243, 80, 15);
-    
+
 }
 
 a {
@@ -85,27 +85,57 @@ textarea {
 }
 
 /* !REUSABLE CLASSES */
+/* !REUSABLE CLASSES */
+/* !REUSABLE CLASSES */
+/* !REUSABLE CLASSES */
+/* !REUSABLE CLASSES */
+/* !REUSABLE CLASSES */
+/* !REUSABLE CLASSES */
+/* !REUSABLE CLASSES */
+/* !REUSABLE CLASSES */
+
+
 .container {
     max-width: var(--container-width);
     margin: 0 auto;
     padding: 0 var(--container-padding);
 }
-.section{
-    padding-block:var(--section-vertical-spacing) ;
+
+.section {
+    padding-block: var(--section-vertical-spacing);
     position: relative;
 }
+
 .has-sparkles,
-.has-sparkles-alt{
+.has-sparkles-alt {
     position: relative;
 }
+
 .has-sparkles::before,
-.has-sparkles::after{
+.has-sparkles::after {
     content: "";
     position: absolute;
     background: url('../images/sparkle.png') center no-repeat;
     background-size: cover;
 }
+
+.d-grid {
+    display: grid;
+}
+
 /* !HEADER */
+/* !HEADER */
+/* !HEADER */
+/* !HEADER */
+/* !HEADER */
+/* !HEADER */
+/* !HEADER */
+/* !HEADER */
+/* !HEADER */
+/* !HEADER */
+/* !HEADER */
+/* !HEADER */
+
 .header {
     margin-bottom: 5rem;
 }
@@ -170,7 +200,7 @@ textarea {
 
 .list {
     display: flex;
-    gap: 2.5rem;
+    gap: 2rem;
 }
 
 menu>.list {
@@ -198,91 +228,214 @@ menu>.list {
 }
 
 /* !JAVASCRIPT STYLES */
-.active.menu{
-    z-index: initial; 
+.active.menu {
+    z-index: initial;
     pointer-events: initial;
     transform: scale(1) translateY(4.5rem);
 
 }
-.active.menu > .list{
+
+.active.menu>.list {
     opacity: 1;
     transition: opacity .1s .5s;
 }
-.active .open-icon{
+
+.active .open-icon {
     display: none;
 }
-.active .close-icon{
+
+.active .close-icon {
     display: block;
 }
-.dark-theme .theme-off{
+
+.dark-theme .theme-off {
     display: none;
 
 }
-.dark-theme .theme-on{
+
+.dark-theme .theme-on {
     display: block;
 }
 
 /* !HERO STYLES*/
-.title{
+.title {
     font-family: var(--title-font-family);
     font-weight: 300;
     text-transform: uppercase;
 }
-.main-title{
-    font-size: clamp(3rem,10vw,10rem);
+
+.main-title {
+    font-size: clamp(3rem, 10vw, 8rem);
     text-align: center;
     line-height: 1.1;
 }
-.inline-image{
+
+.inline-image {
     width: 8rem;
     height: 8rem;
     background: url("../images/Capture.PNG") top center no-repeat;
     background-size: cover;
-    border-radius: 50%; 
+    border-radius: 50%;
     border-bottom-left-radius: 5%;
-    
+
 }
+
 /* !Paro los esparkles*/
 
 
 .dark-theme .has-sparkles::before,
-.dark-theme .has-sparkles::after{
+.dark-theme .has-sparkles::after {
     background: url('../images/sparkle_light.png') center no-repeat;
     background-size: cover;
 }
-.inline-image.has-sparkles::before{
+
+.inline-image.has-sparkles::before {
     width: 1.2rem;
     height: 1.2rem;
     top: -.8rem;
     right: -.5rem;
 }
-.inline-image.has-sparkles::after{
+
+.inline-image.has-sparkles::after {
     width: 1rem;
     height: 1rem;
     bottom: 1.5rem;
     right: -1.3rem;
 }
-.has-sparkles-alt{
+
+.has-sparkles-alt {
     margin: 0;
     padding: 0;
 }
-.has-sparkles-alt::after{
+
+.has-sparkles-alt::after {
     content: '';
     position: absolute;
-    top :28%;
+    top: 28%;
     width: 5vw;
     max-width: 5rem;
-    height:  5vw;
+    height: 5vw;
     max-height: 5rem;
     background: url('../images/sparkle_alt.png') center no-repeat;
     background-size: cover;
 }
-.dark-theme .has-sparkles-alt::after{
+
+.dark-theme .has-sparkles-alt::after {
     background: url('../images/sparkle_alt_light.png') center no-repeat;
     background-size: cover;
 }
-/* !ABOUT ME STYLES */
 
+/* !ABOUT ME STYLES  Sombra de color tenue para cada section*/
+.section:not(.hero)::before {
+    content: "";
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80vw;
+    height: 80vw;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(255, 101, 118, .08) 0%, rgba(255, 101, 118, 0) 100%);
+    z-index: -1;
+}
+
+.section-description {
+    gap: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.description {
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.description-image {
+    width: 25rem;
+    height: 25rem;
+    margin: 0 auto;
+    transform: rotate(10deg);
+}
+
+.description-image img {
+    width: 25rem;
+    height: 25rem;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.description-image.has-sparkles::before,
+.description-image.has-sparkles::after {
+    width: 2rem;
+    height: 2rem;
+}
+
+.description-image.has-sparkles::before {
+    top: 8rem;
+    right: -5rem;
+}
+
+.description-image.has-sparkles::after {
+    top: 14rem;
+    right: -3rem;
+}
+
+.tech-stack {
+    max-width: 50rem;
+    grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+    gap: 2.5rem;
+}
+
+.tech-stack-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.tech-stack-item i {
+    font-size: 5rem;
+    opacity: .7;
+}
+
+.tech-stack-item::before,
+.tech-stack-item::after {
+    position: absolute;
+    top: -1rem;
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: transform .5s, oapcity .5s;
+}
+
+.tech-stack-item::before {
+    content: "";
+    border: 1rem solid transparent;
+    border-top-color: var(--dark-color);
+    transform: translateY(0);
+    z-index: -5;
+}
+
+.tech-stack-item::after {
+    content: attr(data-tooltip);
+    width: max-content;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    font-size: 1.4rem;
+    padding: .5rem 1rem;
+    border-radius: .4rem;
+}
+
+.tech-stack-item:hover::before {
+    opacity: 1;
+    transform: translateY(-.6rem);
+}
+
+.tech-stack-item:hover::after {
+    opacity: 1;
+    transform: translateY(calc(-100% + -.5rem));
+}
 
 /* !PORTFOLIO STYLES */
 
