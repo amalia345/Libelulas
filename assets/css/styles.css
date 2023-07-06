@@ -15,6 +15,7 @@
 :root {
     --light-color: #f3f3f3;
     --dark-color: #242323;
+    
     --third-color: rgb(143, 214, 113);
 
     --border-top-color: rgba(0, 0, 0, .1);
