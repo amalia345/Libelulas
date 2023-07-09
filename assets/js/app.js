@@ -12,30 +12,33 @@ menuToggleButton.addEventListener('click', toggleMenu)
 
 // !REMOVE ACTIVE CLASS FROM AND ICON ON LINK CLICK
 
-const removeActiveLinkClass = e =>{
+const removeActiveLinkClass = e => {
     if (e.target.classList.contains('list-link')) {
         menuElement.classList.remove('active')
         menuToggleButton.classList.remove('active')
-    } 
+    }
 }
-document.addEventListener('click',removeActiveLinkClass)
+document.addEventListener('click', removeActiveLinkClass)
 // !TOGGLE THEME AND STORE SELECTION WITHIN LOCAL STORAGE
 const themeToggleButton = document.querySelector('.theme-toggle-button')
 const bodyElement = document.body;
+
 const currentTheme = localStorage.getItem('darkTheme')
 if (currentTheme) {
     bodyElement.classList.add('dark-theme')
-} 
+}
 
-const toggleTheme = () =>{
+const toggleTheme = () => {
     bodyElement.classList.toggle('dark-theme')
     if (bodyElement.classList.contains('dark-theme')) {
-        localStorage.setItem('darkTheme','active')
+        localStorage.setItem('darkTheme', 'active')
     } else {
         localStorage.removeItem('darkTheme')
     }
 }
-themeToggleButton.addEventListener('click',toggleTheme)
+themeToggleButton.addEventListener('click', toggleTheme)
+
+
 // !SCROLL REVEAL
 const sr = ScrollReveal({
     distance: '50px',
@@ -43,16 +46,16 @@ const sr = ScrollReveal({
     easing: 'cubic-bezier(.68,-.55,.265,1.55)'
 })
 
-sr.reveal('.main-title', {origin:'top'});
-sr.reveal('.scroll-reveal-left', {origin:'left'});
-sr.reveal('.scroll-reveal-right', {origin:'right'});
-sr.reveal('.tech-stack-item', {interval:250});
+sr.reveal('.main-title', { origin: 'top' });
+sr.reveal('.scroll-reveal-left', { origin: 'left' });
+sr.reveal('.scroll-reveal-right', { origin: 'right' });
+sr.reveal('.tech-stack-item', { interval: 250 });
 sr.reveal(`.section-title, .section-subtitle-container `, {
-    interval:350,
+    interval: 350,
     origin: 'top'
 });
-sr.reveal('.portafolio-card', {interval:550});
+sr.reveal('.portafolio-card', { interval: 550 });
 sr.reveal(`.form-container, .footer `, {
-    interval:350,
+    interval: 350,
     origin: 'top'
 });
