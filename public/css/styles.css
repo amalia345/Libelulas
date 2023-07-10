@@ -6,7 +6,6 @@
 *::before,
 *::after {
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
@@ -629,7 +628,7 @@ menu>.list {
 
 /* !FOOTER STYLES */
 .footer-container {
-    bottom: 0;
+
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -641,7 +640,6 @@ menu>.list {
 
 .footer-container>* {
     padding: 0rem 3rem;
-    margin-bottom: .5rem;
 }
 
 .footer .list-link {

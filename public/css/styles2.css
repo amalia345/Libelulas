@@ -3,10 +3,22 @@
 @media screen and (min-width: 768px) {
 
 main{
-    height: 70vh;
+    height: auto;
 }
-
-
+.texto{
+    margin: 3rem 8rem;
+    font-size: 1.4rem;
+}
+.lista{
+    list-style: square;
+    margin: 1rem 8rem 1rem 0rem;
+}
+.lista li{
+    width: 90%;
+}
+h2,h3{
+    margin: 3rem 8rem;
+}
 
 
 
