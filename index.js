@@ -1,4 +1,5 @@
 const express = require('express')
+const serveless = require('serverless-http')
 const path = require('path')
 const app = express()
 
@@ -74,12 +75,8 @@ app.get('/etiquetas', (req, res) => {
     res.render('etiquetas')
 })
 
-
-
-
-
-
-
 app.get("*", (req, res) => {
     res.send("ERROR 404 Direccion equivocada")
 })
+
+
