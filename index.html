@@ -5,20 +5,29 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Completed - Bruno</title>
+  <title>Libelulas Estudio de Desarrollo Web</title>
+  <meta name="keywords" content="desarrollo, web, programacion, landing page, diseño, fullstack,react,html,css">
+  <meta name="description"
+    content="Libélulas: Innovación y creatividad en desarrollo web. Ofrecemos soluciones personalizadas de diseño y programación para impulsar tu presencia digital.">
   <!-- !BOX ICONS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap"
+    rel="stylesheet">
   <!-- !SCROLL REVEAL -->
   <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
   <!-- !Nuestro CSS -->
   <link rel="stylesheet" href="./assets/css/styles.css">
+  <link rel="icon" type="image/x-icon" href="assets\images\libelula-icon.png">
 </head>
 
 <body>
   <!-- !HEADER -->
   <header class="header" id="home">
     <nav class="navbar container">
-      <a href="./index.html" class="logo">Curso</a>
+      <a href="./index.html" class="logo">Libelulas</a>
       <div class="navbar-buttons"> <!-- solo botones de navegacion-->
         <button type="button" class="button icon-button menu-toggle-button">
           <i class="bx bx-menu open-icon"></i>
@@ -33,17 +42,17 @@
         <ul class="list">
           <li class="list-item">
             <a href="#" class="list-link">
-              <span>01</span> Acerca del curso
+              <span>01</span> ¿Qué hacemos?
             </a>
           </li>
           <li class="list-item">
             <a href="#" class="list-link">
-              <span>02</span> Menu
+              <span>02</span> Portafolio
             </a>
           </li>
           <li class="list-item">
             <a href="#" class="list-link">
-              <span>03</span> Documentacion
+              <span>03</span> Contacto
             </a>
           </li>
         </ul>
@@ -54,9 +63,9 @@
   <section class="hero section">
     <div class="container">
       <h1 class="title main-title">
-        Material de <span class="inline-image has-sparkles"></span>
-        <br>apoyo para
-        <br>Programacion We<span class="has-sparkles-alt">b</span>
+        <span id="titulo-principal">Libélulas</span> <span class="inline-image has-sparkles"></span>
+        <br>Diseño y Desarrollo
+        <br>de sitios Web<span class="has-sparkles-alt">⁣</span>
       </h1>
     </div>
   </section>
@@ -64,17 +73,20 @@
   <section class="about-me section" id="about-me">
     <div class="container">
       <div class="section-description d-grid">
-        <div class="scroll-reveal-left">
-          <p class="description">
-            Una guía de estudio interactivo para reforzar los temas más necesarios de <span class="text-bold">HTML,
-              CSS y JS</span> para preparar al alumno en el uso de frameworks modernos y cumplir la misión de la UA de
-            Programación Web de la Carrera de <span class="text-bold">Ingeniería en Informática.</span>
+        <div class="scroll-reveal-left info-present">
+          <p>
+            🌐 Bienvenidos a Libélulas Estudio de Desarrollo Web 🚀 - Somos un equipo apasionado por transformar ideas
+            en realidades digitales. En Libélulas, creemos que un buen diseño web es el corazón de una presencia online
+            exitosa. Nuestra misión es crear sitios web que no solo se vean impresionantes, sino que también ofrezcan
+            una experiencia de usuario excepcional.
           </p>
+          <p>🔍 ¿Buscas elevar tu negocio en el mundo digital? Estás en el lugar correcto. Nos especializamos en el
+            desarrollo web personalizado, desde Landing Pages hasta manejo completo del diseño y presencia digital de
+            marca</p>
         </div>
         <div class="scroll-reveal-right">
           <div class="description-image has-sparkles">
-            <img src="assets\images\becomes-co-7oBmQz4bfrQ-unsplash.jpg"
-              alt="Imagen de dos personas en frente de un computador">
+            <img src="assets\images\libelulas1.png" alt="Imagen de dos personas en frente de un computador">
           </div>
         </div>
       </div>
@@ -107,10 +119,10 @@
   <section class="portafolio section" id="portafolio">
     <div class="container">
       <div class="section-title-container">
-        <h2 class="title section-title">Secciones</h2>
+        <h2 class="title section-title">¿Qué hacemos?</h2>
         <div class="section-subtitle-container">
-          <span class="subtitle-number">02</span>
-          <h5 class="title section-subtitle">Unidades</h5>
+          <span class="subtitle-number">01</span>
+          <h5 class="title section-subtitle">Servicios</h5>
         </div>
       </div>
       <!-- !PORTFOLIO CARDS -->
@@ -122,8 +134,9 @@
               alt="varias personas sentadas en una mesa programando">
           </div>
           <div class="hard-heading">
-            <h5 class="card-title">HTML</h5>
-            <span class="card-subtitle">Inicio del Curso</span>
+            <h5 class="card-title">Diseños Personalizados</h5>
+            <span class="card-subtitle"> Tu sitio web debe ser tan único como tu negocio. Diseñarémos una página de
+              aterrizaje que se alinee perfectamente con la esencia y objetivos de tu marca.</span>
           </div>
         </a>
         <a href="#" class="portafolio-card portafolio-card-2">
@@ -132,8 +145,10 @@
               alt="varias personas sentadas en una mesa programando">
           </div>
           <div class="hard-heading">
-            <h5 class="card-title">CSS</h5>
-            <span class="card-subtitle">Estilos y Diseno de paginas</span>
+            <h5 class="card-title">Diseño Responsive para Móviles</h5>
+            <span class="card-subtitle">Con la mayoría de los usuarios navegando a través de dispositivos móviles, es
+              imperativo que tu página de aterrizaje se vea y funcione impecablemente en todos los tamaños de
+              pantalla.</span>
           </div>
         </a>
         <a href="#" class="portafolio-card portafolio-card-3">
@@ -142,8 +157,10 @@
               alt="varias personas sentadas en una mesa programando">
           </div>
           <div class="hard-heading">
-            <h5 class="card-title">HTML</h5>
-            <span class="card-subtitle">Inicio del Curso</span>
+            <h5 class="card-title">Optimización SEO</h5>
+            <span class="card-subtitle">¿De qué sirve una página de aterrizaje impresionante si nadie la ve? Me aseguro
+              de que tu página de aterrizaje sea amigable para los motores de búsqueda para maximizar la
+              visibilidad.</span>
           </div>
         </a>
         <a href="#" class="portafolio-card portafolio-card-4">
@@ -152,8 +169,9 @@
               alt="varias personas sentadas en una mesa programando">
           </div>
           <div class="hard-heading">
-            <h5 class="card-title">JavaScript</h5>
-            <span class="card-subtitle">Funcionalidad para paginas web</span>
+            <h5 class="card-title">Imágenes de Alta Calidad</h5>
+            <span class="card-subtitle">Una imagen vale más que mil palabras. Utilizo únicamente las mejores imágenes
+              que resuenan con tu contenido</span>
           </div>
         </a>
         <a href="#" class="portafolio-card portafolio-card-5">
@@ -162,8 +180,9 @@
               alt="varias personas sentadas en una mesa programando">
           </div>
           <div class="hard-heading">
-            <h5 class="card-title">Inenieria de software</h5>
-            <span class="card-subtitle">Todo sobre como crear un proyecto</span>
+            <h5 class="card-title">Integración de Fotos Profesionales</h5>
+            <span class="card-subtitle"> ¿Tienes tus propias fotos? ¡Genial! Integraré tus tomas profesionales,
+              optimizándolas para el rendimiento web sin comprometer la calidad.</span>
           </div>
         </a>
         <div class="portafolio-card portafolio-card-6 large-button-container">
@@ -177,14 +196,44 @@
       </div>
     </div>
   </section>
+
+  <!-- !AAcerca de -->
+  <section class="about-me section" id="about-me">
+    <div class="container">
+      <div class="section-title-container">
+        <div class="section-subtitle-container">
+          <span class="subtitle-number">02</span>
+          <h5 class="title section-subtitle"> Portafolio</h5>
+        </div>
+      </div>
+      <div class="section-description d-grid">
+        <div class="scroll-reveal-left info-present">
+          <p>
+            🌐 Bienvenidos a Libélulas Estudio de Desarrollo Web 🚀 - Somos un equipo apasionado por transformar ideas
+            en realidades digitales. En Libélulas, creemos que un buen diseño web es el corazón de una presencia online
+            exitosa. Nuestra misión es crear sitios web que no solo se vean impresionantes, sino que también ofrezcan
+            una experiencia de usuario excepcional.
+          </p>
+          <p>🔍 ¿Buscas elevar tu negocio en el mundo digital? Estás en el lugar correcto. Nos especializamos en el
+            desarrollo web personalizado, desde Landing Pages hasta manejo completo del diseño y presencia digital de
+            marca</p>
+        </div>
+        <div class="scroll-reveal-right">
+          <div class='description-image'>
+            <img src='assets\images\markus-spiske-8OyKWQgBsKQ-unsplash.jpg'
+              alt='Imagen de dos personas en frente de un computador'>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <!-- !CONTACT SECTION -->
   <section class="get-in-touch section" id="contact">
     <div class="container">
       <div class="section-title-container">
-        <h2 class="title section-title">Contacto</h2>
         <div class="section-subtitle-container">
           <span class="subtitle-number">03</span>
-          <h5 class="title section-subtitle"> Sugerencias</h5>
+          <h5 class="title section-subtitle"> Contacto</h5>
         </div>
       </div>
       <div class="section-description d-grid">

@@ -10,11 +10,15 @@
     box-sizing: border-box;
 }
 
+#about-me{
+    background-color: #ff7575;
+}
+
 /*Variables */
 
 :root {
-    --light-color: #f3f3f3;
-    --dark-color: #242323;
+    --light-color: #f3aa60;
+    --dark-color: #1d5b79;
 
     --third-color: rgb(143, 214, 113);
 
@@ -87,14 +91,6 @@ textarea {
 }
 
 /* !REUSABLE CLASSES */
-/* !REUSABLE CLASSES */
-/* !REUSABLE CLASSES */
-/* !REUSABLE CLASSES */
-/* !REUSABLE CLASSES */
-/* !REUSABLE CLASSES */
-/* !REUSABLE CLASSES */
-/* !REUSABLE CLASSES */
-/* !REUSABLE CLASSES */
 
 
 .container {
@@ -126,17 +122,7 @@ textarea {
 }
 
 /* !HEADER */
-/* !HEADER */
-/* !HEADER */
-/* !HEADER */
-/* !HEADER */
-/* !HEADER */
-/* !HEADER */
-/* !HEADER */
-/* !HEADER */
-/* !HEADER */
-/* !HEADER */
-/* !HEADER */
+
 
 .header {
     margin-bottom: 5rem;
@@ -151,11 +137,15 @@ textarea {
 }
 
 .logo {
-    font-family: var(--title-font-family);
+    font-family: 'Dancing Script', cursive;
     font-size: 3rem;
     font-weight: 600;
 }
-
+.info-present{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
 .navbar-buttons {
     display: flex;
     column-gap: .5rem;
@@ -267,17 +257,23 @@ menu>.list {
 }
 
 .main-title {
-    font-size: clamp(3rem, 10vw, 8rem);
+    font-size: clamp(3rem, 10vw,7rem);
     text-align: center;
     line-height: 1.1;
+}
+#titulo-principal{
+    font-family: 'Dancing Script', cursive;
+    text-transform: capitalize;
+    font-size: clamp(5rem, 15vw, 15rem);
+
 }
 
 .inline-image {
     width: 8rem;
     height: 8rem;
-    background: url("../images/Capture.PNG") top center no-repeat;
-    background-size: cover;
-    border-radius: 50%;
+    background: url("../images/libelulas2.png") top center no-repeat;
+    background-size: contain;
+    border-radius: 0%;
     border-bottom-left-radius: 5%;
 
 }
